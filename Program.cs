@@ -1,3 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-Console.WriteLine("Hello, World!");
+﻿public abstract class Vehicle
+{
+    public abstract void Go();
+}
