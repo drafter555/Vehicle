@@ -9,10 +9,16 @@ namespace DzmitryKryvenki
    var _ferrari = new Car();
    var _titanik = new Ship();
    var _boeing = new Plane();
+   Vehicle[] vehicles = new Vehicle[]
+    { _ferrari, _titanik, _boeing };
+   foreach (var Vehicle in vehicles)
+   {
+    Console.WriteLine(Vehicle.Go());
+   }
 
-   Console.WriteLine(_ferrari.Go());
+   /*Console.WriteLine(_ferrari.Go());
    Console.WriteLine(_titanik.Go());
-   Console.WriteLine(_boeing.Go());
+   Console.WriteLine(_boeing.Go());*/
   }
    public abstract class Vehicle
   {
